@@ -1,0 +1,68 @@
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.editor-pane,
+.preview-pane {
+  flex: 1;
+  padding: 10px;
+}
+
+.editor {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.preview {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: #f8f9fa;
+  padding: 15px;
+  border-left: 1px solid #ccc;
+}
+.editor-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.highlighted-code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding: 10px;
+  pointer-events: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.editor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  color: transparent;
+  caret-color: black;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  resize: none;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
